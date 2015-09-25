@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<title>Fibonacci</title>
+
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+		
+	</head>
+
+	<body>
+
+		<h1>Necesitas algun numero de Fibonacci?</h1>
+		<h5>Esta es una pagina con la cual podras saber que numero que ocupa una posicion especifica en la serie de Fibonacci. Esta serie comienza con un uno y un cero, en la posicion 1 y 2 respectivamente. Al sumarse dan un  resultado el cual va en la posicion 3. Luego sumamos las posiciones 2 y 3 y el resultado va en la posicion 4. Repetimos el proceso para la posicion 3 y 4 y el resultado va en la 5. Esto se hace infinitamente creando nuevas posiciones, sumando los ultimos dos numeros generados.</h5>
+		<nav class="navbar navbar-form">
+			<div>
+				<button id="explicacion" class="btn btn-primary">Explicacion grafica</button>
+				<button id="quitar" class="btn btn-primary">Quitar imagen</button>
+				<div align=center>
+					<img src="img/img1.jpg" class="img">
+				</div>
+			</div>
+			<h5>Bueno, presiona el boton para continuar</h5>
+			
+			<button id="comenzar" class="btn btn-primary">Buscar Fibonaccis!!!</button>
+			<button id="finalizar" class="btn btn-primary">Finalizar</button>
+
+		</nav>
+		<h1></h1>
+		<h1></h1>
+		<h1></h1>
+
+		<div class="todo" align=center>
+			<form>
+				<label>Ingresa la posicion a buscar</label>
+				<input class="form-control" type=number id="buscar">
+				<button type=submit id="buscar" class="btn btn-primary">Buscar</button>
+			</form>
+
+			<div>
+				<button type=submit id="borrar" class="btn btn-primary">Borrar resultados</button>
+				<h5></h5>
+				<h5></h5>
+			</div>
+
+			<div>
+				<label>Leyenda</label>
+				<h5></h5>
+				<img src="img/azul.jpg" class="azul">
+				<label>Numeros pares</label> 
+			</div>
+			
+			<div>
+				<img src="img/rojo.jpg" class="rojo">
+				<label>Numeros impares</label>
+			</div>
+
+		</div>	
+
+		<div>
+			<ol id="resultados">
+			</ol>
+		</div>
+
+		<script src="scripts/jquery-1.11.3.js"></script>
+		<script src="scripts/script.js"></script>
+	</body>
+
+</html>
